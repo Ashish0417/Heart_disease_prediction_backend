@@ -1,4 +1,3 @@
-```markdown
 # ❤️ Heart Disease Prediction Backend API
 
 A machine learning-powered FastAPI backend that predicts the likelihood of heart disease based on patient medical attributes. This backend offers not only predictions but also interpretable results with confidence scores, key contributing factors, and clinical insights.
