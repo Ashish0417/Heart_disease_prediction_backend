@@ -45,7 +45,7 @@ def predict_heart_disease(patient_data, model_components, num_bootstrap_samples=
     
     # Basic prediction with the ensemble
     prediction_proba = ensemble.predict_proba(patient_data_scaled)[0, 1]
-    prediction = 1 if prediction_proba >= 0.22 else 0
+    prediction = 1 if prediction_proba >= 0.5 else 0
     
     # --- Enhanced uncertainty estimation ---
     # 1. Bootstrap sampling with noise
