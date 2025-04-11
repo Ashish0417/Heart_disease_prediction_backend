@@ -160,11 +160,11 @@ def predict_heart_disease(patient_data, model_components, num_bootstrap_samples=
     
     # --- Format results for clinical use ---
     risk_levels = {
-        (0, 0.2): "Very Low",
-        (0.2, 0.4): "Low", 
-        (0.4, 0.6): "Moderate",
-        (0.6, 0.8): "High",
-        (0.8, 1.0): "Very High"
+        (0, 0.05): "Very Low",
+        (0.05, 0.2): "Low", 
+        (0.2, 0.4): "Moderate",
+        (0.4, 0.6): "High",
+        (0.6, 1.0): "Very High"
     }
     
     risk_level = next(level for range_vals, level in risk_levels.items() 
